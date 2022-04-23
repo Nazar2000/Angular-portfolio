@@ -1,0 +1,123 @@
+.life-road-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10% 20% 0 20%;
+
+  .life-road-block {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    h2 {
+      background: #e6e6e6;
+      text-align: center;
+      height: 40px;
+      width: 250px;
+      line-height: 40px;
+    }
+
+    .life-road-timeline {
+      position: relative;
+      padding: 0;
+      width: 100%;
+
+      &::before {
+        top: 20px;
+        bottom: 0;
+        position: absolute;
+        content: " ";
+        width: 2px;
+        background-color: #e6e6e6;
+        left: 50%;
+        margin-left: 0;
+        z-index: -1;
+      }
+
+      .timeline-item {
+        width: calc(80% - 30px);
+
+        &__header {
+          h3 {
+            font-family: "Space Mono", Arial, serif;
+            font-weight: 400;
+          }
+
+          span {
+            font-family: "Space Mono", Arial, serif;
+            font-size: 16px;
+            font-weight: normal;
+            color: #bfbfbf;
+          }
+        }
+      }
+
+      li {
+        list-style: none;
+        display: flex;
+        visibility: hidden;
+        transition: top 3s;
+        opacity: 0;
+        width: 100%;
+        justify-content: center;
+        margin-top: 3%;
+
+        &:nth-child(1) {
+          margin-top: 0;
+        }
+
+        &:nth-child(2),
+        &:nth-child(5) {
+          justify-content: flex-start;
+
+          div:first-child {
+            margin-left: 15px;
+          }
+        }
+
+        &:nth-child(4) {
+          justify-content: flex-end;
+
+          div:first-child {
+            margin-left: -15px;
+            flex-direction: row;
+          }
+        }
+      }
+
+      &__block {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &:nth-child(1),
+        &:nth-child(3) {
+          flex-direction: row-reverse;
+        }
+      }
+
+      &__image-block {
+        width: 30px;
+        height: 30px;
+
+        img {
+          border-radius: 15%;
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+  }
+}
+@keyframes lineV {
+  from {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}

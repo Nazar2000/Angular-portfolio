@@ -66,7 +66,7 @@ $colorWhite: white;
             left: 0;
             width: 6vw;
             height: 10px;
-            content: '';
+            content: "";
             background: #fff;
             margin-left: -8vw;
           }
@@ -88,6 +88,7 @@ $colorWhite: white;
         border: 1px solid $colorWhite;
         border-top-right-radius: 40px;
         border-bottom-right-radius: 40px;
+        cursor: pointer;
 
         span {
           color: $colorWhite;
@@ -115,7 +116,7 @@ $colorWhite: white;
             transform: translate(-50%, -50%) rotate(30deg);
             animation: globe 5.4s cubic-bezier(0.35, 0, 0.65, 1) infinite;
             overflow: hidden;
-            box-shadow: inset 0 0 0 .125em $colorWhite;
+            box-shadow: inset 0 0 0 0.125em $colorWhite;
           }
 
           .circle {
@@ -126,9 +127,9 @@ $colorWhite: white;
             height: 100%;
             transform: translate(-50%, -50%);
             border-radius: 50%;
-            box-shadow: inset .1em 0 0 .08em $colorWhite;
+            box-shadow: inset 0.1em 0 0 0.08em $colorWhite;
             animation: circle1 2.7s linear infinite;
-            font-size: .75em;
+            font-size: 0.75em;
           }
 
           .circle-hor {
@@ -139,8 +140,8 @@ $colorWhite: white;
             transform: translate(-50%, -50%);
             border-radius: 50%;
             height: 55%;
-            box-shadow: inset 0 0 0 .15em $colorWhite;
-            font-size: .75em;
+            box-shadow: inset 0 0 0 0.15em $colorWhite;
+            font-size: 0.75em;
           }
 
           .circle-hor-middle {
@@ -150,9 +151,9 @@ $colorWhite: white;
             width: 150%;
             transform: translate(-50%, -50%);
             border-radius: 0;
-            height: .15em;
+            height: 0.15em;
             background: $colorWhite;
-            font-size: .75em;
+            font-size: 0.75em;
           }
 
           :nth-child(1) {
@@ -160,7 +161,7 @@ $colorWhite: white;
           }
 
           :nth-child(2) {
-            animation-delay: -.9s;
+            animation-delay: -0.9s;
           }
         }
       }
@@ -214,27 +215,27 @@ $colorWhite: white;
 @keyframes circle1 {
   0% {
     border-radius: 50%;
-    box-shadow: inset .1em 0 0 .08em $colorWhite;
+    box-shadow: inset 0.1em 0 0 0.08em $colorWhite;
     width: 100%;
   }
   49% {
     border-radius: 50%;
-    box-shadow: inset .1em 0 0 .08em $colorWhite;
+    box-shadow: inset 0.1em 0 0 0.08em $colorWhite;
     background: transparent;
   }
   50% {
     border-radius: 0;
-    width: .175em;
+    width: 0.175em;
     background: $colorWhite;
   }
   51% {
     border-radius: 50%;
-    box-shadow: inset -.1em 0px 0px .08em $colorWhite;
+    box-shadow: inset -0.1em 0px 0px 0.08em $colorWhite;
     background: transparent;
   }
   100% {
     border-radius: 50%;
-    box-shadow: inset -.1em 0px 0px .08em $colorWhite;
+    box-shadow: inset -0.1em 0px 0px 0.08em $colorWhite;
     width: 100%;
   }
 }

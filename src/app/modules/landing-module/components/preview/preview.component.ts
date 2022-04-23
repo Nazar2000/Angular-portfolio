@@ -1,15 +1,16 @@
-import {Component, OnInit} from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-    selector: 'app-preview',
-    templateUrl: './preview.component.html',
-    styleUrls: ['./preview.component.scss']
+  selector: "app-preview",
+  templateUrl: "./preview.component.html",
+  styleUrls: ["./preview.component.scss"],
 })
 export class PreviewComponent implements OnInit {
+  constructor() {}
 
-    constructor() {
-    }
+  ngOnInit(): void {}
 
-    ngOnInit(): void {
-    }
+  openWikiPage(): void {
+    window.open("https://en.wikipedia.org/wiki/Ukraine");
+  }
 }
