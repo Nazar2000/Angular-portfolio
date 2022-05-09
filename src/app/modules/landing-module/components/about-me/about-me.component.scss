@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 10% 20% 0 20%;
+  padding-top: 10%;
 
   .about-me-header {
     text-align: center;
@@ -14,7 +14,7 @@
   .about-me-block {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 60%;
 
     .top-row-block {
       display: flex;
@@ -78,6 +78,11 @@
     }
 
     .bottom-row-block {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 40px;
+
       .skills-block {
         display: flex;
         justify-content: center;
@@ -112,14 +117,14 @@
       }
 
       .download-btn {
-        width: 220px;
+        width: 250px;
         height: 50px;
         background: rgba(255, 144, 0);
         border: none;
         border-radius: 35px;
         display: flex;
         align-items: center;
-        padding: 0 15px;
+        padding: 0 25px;
         cursor: pointer;
         justify-content: space-between;
         margin-top: 40px;
@@ -135,6 +140,38 @@
           height: 30px;
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 1266px) {
+  .about-me-container {
+    .about-me-header {
+      margin-bottom: 35px;
+    }
+
+    .about-me-block {
+      .top-row-block {
+        display: flex;
+        flex-direction: column;
+
+        .left-column-block {
+          margin-bottom: 35px;
+        }
+
+        .left-column-block, .right-column-block {
+          width: 100%;
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .about-me-container {
+    .about-me-block {
+      width: 90%;
     }
   }
 }

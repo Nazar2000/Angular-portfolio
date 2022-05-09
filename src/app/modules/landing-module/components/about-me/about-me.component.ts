@@ -12,7 +12,7 @@ export class AboutMeComponent implements OnInit {
 
   openCV(): void {
     window.open(
-      "https://nazar2000.github.io/Angular-portfolio/assets/cv/CV_FE_Nazarii_Pyndus.pdf",
+      "https://nazar2000.github.io/angular-portfolio/assets/cv/CV_FE_Nazarii_Pyndus.pdf",
       "_blank",
       "fullscreen=yes"
     );

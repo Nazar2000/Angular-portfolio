@@ -1,21 +1,21 @@
 .life-road-container {
-  height: 100vh;
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 10% 20% 0 20%;
+  padding-top: 10%;
+  padding-bottom: 10%;
 
   .life-road-block {
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 60%;
 
     h2 {
-      background: #e6e6e6;
       text-align: center;
       height: 40px;
       width: 250px;
       line-height: 40px;
+      background: white;
     }
 
     .life-road-timeline {
@@ -72,7 +72,7 @@
           justify-content: flex-start;
 
           div:first-child {
-            margin-left: 15px;
+            margin-left: 20px;
           }
         }
 
@@ -80,7 +80,7 @@
           justify-content: flex-end;
 
           div:first-child {
-            margin-left: -15px;
+            margin-left: -20px;
             flex-direction: row;
           }
         }
@@ -99,25 +99,35 @@
       }
 
       &__image-block {
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
 
         img {
           border-radius: 15%;
-          width: 30px;
-          height: 30px;
+          width: 40px;
+          height: 40px;
         }
       }
     }
   }
 }
-@keyframes lineV {
-  from {
-    opacity: 0;
-    transform: translateY(50%);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0%);
+
+@media screen and (max-width: 550px) {
+  .life-road-container {
+    .life-road-block {
+      width: 95%;
+
+      .life-road-timeline {
+        &__block {
+          .timeline-item {
+            width: calc(80% - 10px);
+
+            &__header {
+              margin-left: 0 !important;
+            }
+          }
+        }
+      }
+    }
   }
 }
