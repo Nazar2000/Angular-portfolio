@@ -14,7 +14,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     margin: 0;
-    width: 80%;
+    width: 60%;
     height: 45px;
     text-decoration: none;
 
@@ -58,6 +58,14 @@ footer {
     display: flex;
     justify-content: flex-start;
     padding: 0;
+  }
+}
+
+@media screen and (max-width: 1260px) {
+  footer {
+    ul {
+      width: 80%;
+    }
   }
 }
 
